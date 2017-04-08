@@ -23,6 +23,7 @@ namespace kursachMain
         public MainWindow()
         {
             InitializeComponent();
+           // this.DataContext = new WindowViewModel(this);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) //check praktic
