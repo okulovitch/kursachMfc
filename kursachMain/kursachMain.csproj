@@ -54,6 +54,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="kursachDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kursachDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Practice.xaml.cs">
       <DependentUpon>Practice.xaml</DependentUpon>
     </Compile>
@@ -99,6 +104,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="kursachDataSet.xsc">
+      <DependentUpon>kursachDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kursachDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kursachDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kursachDataSet.xss">
+      <DependentUpon>kursachDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -12,8 +12,8 @@ c:\users\владимир\documents\visual studio 2017\Projects\kursachMain\kurs
 c:\users\владимир\documents\visual studio 2017\Projects\kursachMain\kursachMain\obj\Debug\kursachMain.exe
 c:\users\владимир\documents\visual studio 2017\Projects\kursachMain\kursachMain\obj\Debug\kursachMain.pdb
 c:\users\владимир\documents\visual studio 2017\Projects\kursachMain\kursachMain\obj\Debug\kursachMain.csprojResolveAssemblyReference.cache
-C:\Users\Владимир\Documents\Visual Studio 2017\Projects\kursachMain\kursachMain\obj\Debug\Windows\Window1.baml
 C:\Users\Владимир\Documents\Visual Studio 2017\Projects\kursachMain\kursachMain\obj\Debug\Windows\Practice.g.cs
 C:\Users\Владимир\Documents\Visual Studio 2017\Projects\kursachMain\kursachMain\obj\Debug\Windows\Practice.baml
 C:\Users\Владимир\Documents\Visual Studio 2017\Projects\kursachMain\kursachMain\obj\Debug\Windows\Prepods.g.cs
 C:\Users\Владимир\Documents\Visual Studio 2017\Projects\kursachMain\kursachMain\obj\Debug\Windows\Prepods.baml
+C:\Users\Владимир\Documents\Visual Studio 2017\Projects\kursachMain\kursachMain\obj\Debug\Windows\Window1.baml

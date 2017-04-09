@@ -5,21 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:kursachMain.Windows"
         mc:Ignorable="d"
-        Title="Prepods" Height="300" Width="300">
-    <Grid>
+        Title="Prepods" Height="300" Width="600">
+    <Grid HorizontalAlignment="Left" Width="600">
+
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="0"/>
                 <GradientStop Color="#FF701616" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
+
         <Label Content="Кафедра" HorizontalAlignment="Left" Margin="10,175,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.627,-0.443" Background="#FF9E6969" Width="72" Height="24"/>
         <Label Content="ФИО" HorizontalAlignment="Left" Margin="11,107,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.627,-0.443" Background="#FF9E6969" Width="71" Height="25"/>
         <Label Content="Должность" HorizontalAlignment="Left" Margin="10,142,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.627,-0.443" Background="#FF9E6969" Height="24"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="90,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.11,0.724"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="91,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="91,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="FIO_txt" HorizontalAlignment="Left" Height="23" Margin="90,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.11,0.724" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="Pulpit_txt" HorizontalAlignment="Left" Height="23" Margin="91,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_1"/>
+        <TextBox x:Name="Positin_txt" HorizontalAlignment="Left" Height="23" Margin="91,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btn_Save" Content="Save" HorizontalAlignment="Left" Margin="10,212,0,0" VerticalAlignment="Top" Width="75" Background="#FFB49323" Click="btn_Save_Click"/>
         <Button x:Name="btn_PrepodsShowSqlTabl" Content="Show" HorizontalAlignment="Left" Margin="91,212,0,0" VerticalAlignment="Top" Width="119" Click="Button_Click" Background="#FF6ABB61"/>
+        <DataGrid x:Name="PrepodDatabaseGrid"  HorizontalAlignment="Left" Height="124" Margin="253,107,0,0"
+                  VerticalAlignment="Top" MinWidth="250" Width="auto" ItemsSource="{Binding}"/>
     </Grid>
 </Window>

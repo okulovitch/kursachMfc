@@ -18,7 +18,7 @@
         <TextBox HorizontalAlignment="Left" Height="23" Margin="61,80,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="61,110,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="61,140,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="12,50,0,0" VerticalAlignment="Top" Background="#FFC5ABAB" Width="37" Height="23"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="12,50,0,0" VerticalAlignment="Top" Background="#FFC5ABAB" Width="38" Height="23"/>
         <Label Content="Label" HorizontalAlignment="Left" Margin="12,80,0,0" VerticalAlignment="Top" Background="#FFC3B0B0" Height="24" RenderTransformOrigin="0.816,0.75"/>
         <Label Content="Label" HorizontalAlignment="Left" Margin="12,110,0,0" VerticalAlignment="Top" Background="#FFE4C4C4" RenderTransformOrigin="0.105,-1.308" Height="24"/>
         <Label Content="Label" HorizontalAlignment="Left" Margin="12,140,0,0" VerticalAlignment="Top" Background="#FFE4C4C4" RenderTransformOrigin="0.105,-1.308" Height="24"/>
