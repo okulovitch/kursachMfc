@@ -15,3 +15,5 @@ c:\users\владимир\documents\visual studio 2017\Projects\kursachMain\kurs
 C:\Users\Владимир\Documents\Visual Studio 2017\Projects\kursachMain\kursachMain\obj\Debug\Windows\Window1.baml
 C:\Users\Владимир\Documents\Visual Studio 2017\Projects\kursachMain\kursachMain\obj\Debug\Windows\Practice.g.cs
 C:\Users\Владимир\Documents\Visual Studio 2017\Projects\kursachMain\kursachMain\obj\Debug\Windows\Practice.baml
+C:\Users\Владимир\Documents\Visual Studio 2017\Projects\kursachMain\kursachMain\obj\Debug\Windows\Prepods.g.cs
+C:\Users\Владимир\Documents\Visual Studio 2017\Projects\kursachMain\kursachMain\obj\Debug\Windows\Prepods.baml

@@ -28,14 +28,22 @@ namespace kursachMain
 
         private void Button_Click(object sender, RoutedEventArgs e) //check praktic
         {
-            this.Hide();
-            Window w1 = new Window();
-            w1.Show();
+            //this.Hide();
+            //Window w1 = new Window();
+            //w1.Show();
+            Windows.Practice pract = new Windows.Practice();
+            pract.Show();
+    
         }
         private void EscButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Windows.Prepods prepWindow = new Windows.Prepods();
+            prepWindow.Show();
+        }
     }
 }
