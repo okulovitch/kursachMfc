@@ -15,23 +15,13 @@ using System.Windows.Shapes;
 namespace kursachMain.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для Practice.xaml
+    /// Логика взаимодействия для createContract.xaml
     /// </summary>
-    public partial class Practice : Window
+    public partial class createContract : Window
     {
-        public Practice()
+        public createContract()
         {
             InitializeComponent();
-        }
-
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }

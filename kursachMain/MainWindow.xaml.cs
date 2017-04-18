@@ -45,5 +45,11 @@ namespace kursachMain
             Windows.Prepods prepWindow = new Windows.Prepods();
             prepWindow.Show();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Windows.Enterprises enterprice = new Windows.Enterprises();
+            enterprice.Show();
+        }
     }
 }

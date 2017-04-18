@@ -23,13 +23,17 @@ namespace kursachMain.Windows
     /// </summary>
     public partial class Prepods : Window
     {
-        
+        //string connectionString;
+        //SqlDataAdapter adapter;
+       
 
         public Prepods()
         {
             InitializeComponent();
             //string connectionString = "SERVER=localhost;DATABASE=kursach;UID=root;PASSWORD=";
             //MySqlConnection = new MySq
+            //connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+
         }
 
         private void btn_Save_Click(object sender, RoutedEventArgs e)///save in database Prepods 
@@ -52,7 +56,7 @@ namespace kursachMain.Windows
                 string Query = "insert into Преподаватели (IDПреподавателя,ФИОПреподавателя,Должность,Кафедра)  values ('"+ this.FIO_txt.Text + "','"+ this.Positin_txt.Text+ "','"+ Pulpit_txt.Text +"')";
                 SqlCommand createCommand = new SqlCommand(Query, sqlCon);
                 createCommand.ExecuteNonQuery();
-                MessageBox.Show("saved");
+               // MessageBox.Show("saved");
 
                 sqlCon.Close();
 
@@ -66,16 +70,17 @@ namespace kursachMain.Windows
         private void Button_Click(object sender, RoutedEventArgs e)///show sql database Prepods
         {
             SqlConnection sqlCon = new SqlConnection();
+            sqlCon.ConnectionString = ConfigurationManager.ConnectionStrings["kursachMain.Properties.Settings.kursachConnectionString"].ConnectionString;
             //open connection database 
+
             try
             {
-                sqlCon.Open();
-                string Query = "select *from Преподаватели";
-                SqlCommand createCommand = new SqlCommand(Query, sqlCon);
-                createCommand.ExecuteNonQuery();
-
-                sqlCon.Close();
-
+              sqlCon.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = "select*from Преподаватели";
+                cmd.Connection = sqlCon;
+                SqlDataAdapter da = new SqlDataAdapter();
+                
             }
             catch (Exception ex)
             {
@@ -93,6 +98,22 @@ namespace kursachMain.Windows
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void PrepodDatabaseGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            kursachMain.kursachDataSet kursachDataSet = ((kursachMain.kursachDataSet)(this.FindResource("kursachDataSet")));
+            // Загрузить данные в таблицу Преподаватели. Можно изменить этот код как требуется.
+            kursachMain.kursachDataSetTableAdapters.ПреподавателиTableAdapter kursachDataSetПреподавателиTableAdapter = new kursachMain.kursachDataSetTableAdapters.ПреподавателиTableAdapter();
+            kursachDataSetПреподавателиTableAdapter.Fill(kursachDataSet.Преподаватели);
+            System.Windows.Data.CollectionViewSource преподавателиViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("преподавателиViewSource")));
+            преподавателиViewSource.View.MoveCurrentToFirst();
         }
     }
 }

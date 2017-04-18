@@ -1,12 +1,17 @@
-﻿<Window x:Class="kursachMain.Windows.Prepods"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:kursachMain.Windows"
+        xmlns:kursachMain="clr-namespace:kursachMain" x:Class="kursachMain.Windows.Prepods"
         mc:Ignorable="d"
-        Title="Prepods" Height="300" Width="600">
-    <Grid HorizontalAlignment="Left" Width="600">
+        Title="Prepods" Height="300" Width="600" Loaded="Window_Loaded">
+    <Window.Resources>
+        <kursachMain:kursachDataSet x:Key="kursachDataSet"/>
+        <CollectionViewSource x:Key="преподавателиViewSource" Source="{Binding Преподаватели, Source={StaticResource kursachDataSet}}"/>
+    </Window.Resources>
+    <Grid HorizontalAlignment="Left" Width="600" DataContext="{StaticResource преподавателиViewSource}">
 
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -23,7 +28,7 @@
         <TextBox x:Name="Positin_txt" HorizontalAlignment="Left" Height="23" Margin="91,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btn_Save" Content="Save" HorizontalAlignment="Left" Margin="10,212,0,0" VerticalAlignment="Top" Width="75" Background="#FFB49323" Click="btn_Save_Click"/>
         <Button x:Name="btn_PrepodsShowSqlTabl" Content="Show" HorizontalAlignment="Left" Margin="91,212,0,0" VerticalAlignment="Top" Width="119" Click="Button_Click" Background="#FF6ABB61"/>
-        <DataGrid x:Name="PrepodDatabaseGrid"  HorizontalAlignment="Left" Height="124" Margin="253,107,0,0"
-                  VerticalAlignment="Top" MinWidth="250" Width="auto" ItemsSource="{Binding}"/>
+        <DataGrid x:Name="PrepodDatabaseGrid"  HorizontalAlignment="Left" Height="124" Margin="242,107,0,0"
+                  VerticalAlignment="Top" MinWidth="250" Width="328" SelectionChanged="PrepodDatabaseGrid_SelectionChanged" ItemsSource="{Binding}"/>
     </Grid>
 </Window>

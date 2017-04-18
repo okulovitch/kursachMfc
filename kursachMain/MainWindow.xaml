@@ -15,12 +15,13 @@
 
     <Grid Margin="207,90,184,90">
 
-        <Border Background="#FF895541" BorderBrush="Gainsboro" BorderThickness="1" Margin="-34,0,0,-31">
+        <Border Background="#FF895541" BorderBrush="Gainsboro" BorderThickness="1" Margin="-69,0,-35,-59">
             <StackPanel Margin="10" Cursor="ScrollW">
                 <Button x:Name="btn_PracticMain" Click="Button_Click">Просмотр практики</Button>
                 <Button x:Name="btn_StudentsMain" Margin="0,10">Студенты</Button>
                 <Button x:Name="btn_PrepodsMain" Click="Button_Click_1" >Преподаватели</Button>
                 <Button  Margin="0,10">Распределить на практику</Button>
+                <Button  Margin="0" Content="Предприятия" Click="Button_Click_2"/>
 
 
             </StackPanel>

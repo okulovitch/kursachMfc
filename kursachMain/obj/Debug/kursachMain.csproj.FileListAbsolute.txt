@@ -16,4 +16,8 @@ C:\Users\Владимир\Documents\Visual Studio 2017\Projects\kursachMain\kurs
 C:\Users\Владимир\Documents\Visual Studio 2017\Projects\kursachMain\kursachMain\obj\Debug\Windows\Practice.baml
 C:\Users\Владимир\Documents\Visual Studio 2017\Projects\kursachMain\kursachMain\obj\Debug\Windows\Prepods.g.cs
 C:\Users\Владимир\Documents\Visual Studio 2017\Projects\kursachMain\kursachMain\obj\Debug\Windows\Prepods.baml
-C:\Users\Владимир\Documents\Visual Studio 2017\Projects\kursachMain\kursachMain\obj\Debug\Windows\Window1.baml
+C:\Users\Владимир\Documents\Visual Studio 2017\Projects\kursachMain\kursachMain\obj\Debug\Windows\createContract.g.cs
+C:\Users\Владимир\Documents\Visual Studio 2017\Projects\kursachMain\kursachMain\obj\Debug\Windows\Enterprises.g.cs
+C:\Users\Владимир\Documents\Visual Studio 2017\Projects\kursachMain\kursachMain\obj\Debug\Windows\createContract.baml
+C:\Users\Владимир\Documents\Visual Studio 2017\Projects\kursachMain\kursachMain\obj\Debug\Windows\Enterprises.baml
+C:\Users\Владимир\Documents\Visual Studio 2017\Projects\kursachMain\kursachMain\obj\Debug\GeneratedInternalTypeHelper.g.cs

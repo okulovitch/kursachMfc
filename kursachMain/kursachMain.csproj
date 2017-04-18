@@ -35,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,10 +55,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="kursachDataSet.cs">
+      <DependentUpon>kursachDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="kursachDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>kursachDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\createContract.xaml.cs">
+      <DependentUpon>createContract.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Enterprises.xaml.cs">
+      <DependentUpon>Enterprises.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\Practice.xaml.cs">
       <DependentUpon>Practice.xaml</DependentUpon>
@@ -77,6 +87,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Windows\createContract.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Enterprises.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\Practice.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -109,7 +127,6 @@
     </None>
     <None Include="kursachDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>kursachDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="kursachDataSet.xss">

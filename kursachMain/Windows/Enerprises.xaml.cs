@@ -15,21 +15,16 @@ using System.Windows.Shapes;
 namespace kursachMain.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для Practice.xaml
+    /// Логика взаимодействия для Enerprises.xaml
     /// </summary>
-    public partial class Practice : Window
+    public partial class Enerprises : Window
     {
-        public Practice()
+        public Enerprises()
         {
             InitializeComponent();
         }
 
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
         }
